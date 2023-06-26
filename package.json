@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-jb",
+  "version": "1.0.0",
+  "description": "Building an application using node.js during course at John Bryce",
+  "main": "tryout.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameelbrik/NodeJS-jb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jameelbrik/NodeJS-jb/issues"
+  },
+  "homepage": "https://github.com/jameelbrik/NodeJS-jb#readme"
+}
