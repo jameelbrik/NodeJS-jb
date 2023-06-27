@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router();
+router = express.Router();
 
 
 const dashboard = (req, res, next) => {
@@ -18,4 +18,4 @@ router.get('/dashboard', dashboard);
 router.get('/logout', logout);
 router.post('/symbol', symbol);
 
-router.exports = router;
+module.exports = router;

@@ -1,5 +1,5 @@
-const express = require('express')
-const router = express.Router();
+const express = require('express');
+router = express.Router();
 
 
 const welcome = (req, res, next) => {
@@ -8,4 +8,14 @@ const welcome = (req, res, next) => {
 
 router.get('/welcome', welcome);
 
-router.exports = router;
+module.exports = router;
+
+// const express = require('express');
+// router = express.Router();
+
+// const welcome = (req, res, next) => {
+//     res.send('welcome');
+// }
+// router.get('/welcome', welcome);
+
+// module.exports = router;

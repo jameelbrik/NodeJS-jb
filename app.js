@@ -5,13 +5,14 @@ const port = 3000;
 const host = 'localhost';
 
 const userRoute = require('./routes/users');
-const guestRoute = require('./routes/guests');
+const guestsRoute = require('./routes/guests');
 const githubRoute = require('./routes/github');
-const errorModule = require('./middlewares/error-moduke')
-const notFound = require('./middlewares/404-notFound')
+
+const errorModule = require('./middlewares/error-moduke');
+const notFound = require('./middlewares/404-notFound');
 
 
-app.use('/', guestRoute);
+app.use('/', guestsRoute);
 app.use('/', userRoute);
 app.use('/github', githubRoute);
 

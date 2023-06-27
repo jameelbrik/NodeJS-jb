@@ -1,5 +1,5 @@
 const express = require('express')
-const router = express.Router();
+router = express.Router();
 
 const authanticate = (req, res, next) => {
     res.send('AUTH');
