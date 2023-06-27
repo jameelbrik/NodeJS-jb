@@ -7,11 +7,13 @@ const host = 'localhost';
 const userRoute = require('./routes/users');
 const guestsRoute = require('./routes/guests');
 const githubRoute = require('./routes/github');
+const connectDB = require('./middlewares/connectDB');
 
 const errorModule = require('./middlewares/error-moduke');
 const notFound = require('./middlewares/404-notFound');
 
-
+app.use(express.urlencoded({extended: false}));
+app.use(connectDB);
 app.use('/', guestsRoute);
 app.use('/', userRoute);
 app.use('/github', githubRoute);
